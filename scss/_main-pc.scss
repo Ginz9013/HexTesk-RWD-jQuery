@@ -1,0 +1,93 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  header{
+    .sns{
+      display: flex;
+      justify-content: flex-end;
+      background: #f7f7f7;
+      padding: 12px;
+
+      li{
+        a{
+          text-decoration: none;
+        }
+
+        .fb{
+          color: #3b5998;
+          margin-right: 12px;
+        }
+
+        .twitter{
+          color: #00acee;
+        }
+      }
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1{
+        a{
+          display: block;
+          background: url("../images/logo.png") ;
+          text-indent: 101%;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 244px;
+          height: 50px;
+
+        }
+      }
+
+      .menu{
+        display: flex;
+
+        li{
+          position: relative;
+
+          a{
+            display: block;
+            padding: 16px 24px;
+            text-decoration: none;
+            color: $primary-color;
+          }
+
+          &::before{
+            display: none;
+            content: "";
+            padding: 2px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background: $primary-color;
+          }
+
+          &:hover::before{
+            display: block;
+          }
+
+          .product-slide{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  main{
+    .skill-area{
+      display: flex;
+      .card{
+        margin: 16px;
+        box-shadow: 2px 2px 2px #333;
+      }
+    }
+  }
+}

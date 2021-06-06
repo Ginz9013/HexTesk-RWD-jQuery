@@ -5,23 +5,172 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RWD & jQuery task</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./scss/all.css">
+
 </head>
 <body>
   <div class="container">
     <header>
       <ul class="sns">
         <li>
-          <a href="#">
-            <img src="https://lh3.googleusercontent.com/AzOSH8namE010Sw2…QjYIJ8fFnbrf0ou7XmS7sSd2O2zbHDX0Cf7c1=w2880-h1528" alt="fb-logo">
+          <a href="#" class="fb">
+            <img src="./images/facebookIcon.png" alt="fb-logo">
             粉絲團
           </a>
         </li>
+        <li>
+          <a href="#" class="twitter">
+            <img src="./images/twitterIcon.png" alt="">
+            追蹤我們
+          </a>
+        </li>
       </ul>
+      <nav>
+        <h1><a href="#">HexSchool</a></h1>
+        <ul class="menu">
+          <li><a href="#">首頁</a></li>
+          <li>
+            <a href="#">產品介紹</a>
+            <ul class="product-slide">
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">響應式網站設計</a></li>
+              <li><a href="#">jQuery</a></li>
+            </ul>
+          </li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <main>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./images/banner.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/banner.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/banner.png" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <div class="skill-area">
+        <div class="html5 card">
+          <img src="./images/html.png" alt="HTML5">
+          <h3>Html 5 基礎教學</h3>
+          <p>
+            主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+          </p>
+        </div>
+        <div class="rwd card">
+          <img src="./images/rwd.png" alt="RWD">
+          <h3>響應式網站設計</h3>
+          <p>
+            響應是網站設計 (Responsiveweb design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。
+          </p>
+        </div>
+        <div class="jquery card">
+          <img src="./images/jQuery.png" alt="jQuery">
+          <h3>jQuery 實戰教學</h3>
+          <p>
+            本課程有以下特色
+          </p>
+          <ul>
+            <li>了解變數的使用方法</li>
+            <li>學習並操作DOM</li>
+            <li>學習基本數學運算方法</li>
+            <li>套件的操作及運用</li>
+          </ul>
+        </div>
+      </div>
+      <div class="versus-area">
+        <h2>線上及實體課程的差異</h2>
+        <table>
+          <tr>
+            <th>項目</th>
+            <th>Hex School 線上課程</th>
+            <th>一般線上課程</th>
+            <th>實體課程</th>
+          </tr>
+          <tr>
+            <td>費用</td>
+            <td>較低</td>
+            <td>較低</td>
+            <td>較高</td>
+          </tr>
+          <tr>
+            <td>學習效果</td>
+            <td>一般</td>
+            <td>較低</td>
+            <td>很好</td>
+          </tr>
+          <tr>
+            <td>Code review</td>
+            <td>有</td>
+            <td>無</td>
+            <td>不一定</td>
+          </tr>
+          <tr>
+            <td>課程更新速度</td>
+            <td>普通</td>
+            <td>普通</td>
+            <td>較慢</td>
+          </tr>
+          <tr>
+            <td>多次複習</td>
+            <td>可</td>
+            <td>可</td>
+            <td>不可</td>
+          </tr>
+          <tr>
+            <td>字幕</td>
+            <td>有</td>
+            <td>不一定</td>
+            <td>板書</td>
+          </tr>
+        </table>
+      </div>
+      <div class="info-area">
+        <h2>對我們的課程有興趣嗎？</h2>
+        <h2>歡迎留下您的資料</h2>
+        <form action="#">
+          <input type="text" name="Message">
+          <div class="person-info">
+            <input type="text" name="Name">
+            <input type="text" name="TEL">
+            <input type="text" name="Mail">
+            <input type="submit" name="送出">
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <img src="./images/footerLogo.png" alt="Footer Logo">
+      <ul class="contact-us">
+        <li>聯絡我們：hexschool@gmail.com</li>
+        <li>電話：0999-123-456</li>
+      </ul>
+    </footer>
   </div>
 
   <script src="./js/jQuery3.6.0-compressed.js"></script>
+
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+  
+  <!-- All.js -->
   <script src="./js/all.js"></script>
 </body>
 </html>
