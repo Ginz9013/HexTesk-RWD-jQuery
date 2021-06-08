@@ -67,21 +67,27 @@
 
       <div class="skill-area">
         <div class="html5 card">
-          <img src="./images/html.png" alt="HTML5">
+          <div class="img-container">
+            <img src="./images/html.png" alt="HTML5">
+          </div>
           <h3>Html 5 基礎教學</h3>
           <p>
             主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
           </p>
         </div>
         <div class="rwd card">
-          <img src="./images/rwd.png" alt="RWD">
+          <div class="img-container">
+            <img src="./images/rwd.png" alt="RWD">
+          </div>
           <h3>響應式網站設計</h3>
           <p>
             響應是網站設計 (Responsiveweb design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。
           </p>
         </div>
         <div class="jquery card">
-          <img src="./images/jQuery.png" alt="jQuery">
+          <div class="img-container">
+            <img src="./images/jQuery.png" alt="jQuery">
+          </div>
           <h3>jQuery 實戰教學</h3>
           <p>
             本課程有以下特色
@@ -145,12 +151,20 @@
         <h2>對我們的課程有興趣嗎？</h2>
         <h2>歡迎留下您的資料</h2>
         <form action="#">
-          <input type="text" name="Message">
+          <textarea name="Message" cols="30" rows="10"></textarea>
           <div class="person-info">
-            <input type="text" name="Name">
-            <input type="text" name="TEL">
-            <input type="text" name="Mail">
-            <input type="submit" name="送出">
+            <label for="name">姓名</label>
+            <input type="text" name="Name" placeholder="John Dou">
+
+            <label for="TEL">電話</label>
+            <input type="text" name="TEL" placeholder="07-1234-5678">
+
+            <label for="Mail">信箱</label>
+            <input type="text" name="Mail" placeholder="hexschool@gmail.com">
+
+            <div class="submit">
+              <input  class="btn-submit" type="submit" name="送出">  
+            </div>
           </div>
         </form>
       </div>
@@ -158,8 +172,8 @@
     <footer>
       <img src="./images/footerLogo.png" alt="Footer Logo">
       <ul class="contact-us">
-        <li>聯絡我們：hexschool@gmail.com</li>
-        <li>電話：0999-123-456</li>
+        <li>聯絡我們：<i class="pink">hexschool@gmail.com</i></li>
+        <li>電話：<i class="pink">0999-123-456</i></li>
       </ul>
     </footer>
   </div>

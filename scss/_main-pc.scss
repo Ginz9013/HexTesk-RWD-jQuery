@@ -86,7 +86,136 @@
       display: flex;
       .card{
         margin: 16px;
-        box-shadow: 2px 2px 2px #333;
+        box-shadow: 2px 2px 4px #888;
+        width: 33.33%;
+        padding:  4px 16px;
+
+        .img-container{
+          height: 160px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        h3{
+          font-weight: bold;
+          font-size: 18px;
+          margin-top: 4px;
+          text-align: center;
+        }
+
+        p{
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 12px;
+        }
+
+        ul{
+          font-size: 16px;
+          line-height: 24px;
+          list-style: disc;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .versus-area{
+      margin-top: 24px;
+      
+      h2{
+        text-align: center;
+        font-size: 24px;
+      }
+
+      table{
+        margin: 0 auto;
+        margin-top: 24px;
+        font-size: 14px;
+        text-align: left;
+
+        tr{
+          border-top: 1px solid #f0f0f0;
+          border-bottom: 1px solid #f0f0f0;
+          
+
+          th{
+            background: #f7f7f7;
+            padding: 10px 96px 10px 16px;
+          }
+
+          td{
+            padding: 10px 96px 10px 16px;
+          }
+        }
+      }
+    }
+
+    .info-area{
+      text-align: center;
+      background: linear-gradient( #02664c, #019772);
+      padding: 32px 16px;
+
+      h2{
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 8px;
+        letter-spacing: 1.2px;
+      }
+
+      form{
+        display: flex;
+        margin-top: 32px;
+
+        textarea{
+          width: 60%;
+        }
+
+        .person-info{
+          margin-left: 32px;
+          text-align: left;
+
+          label{
+            color: #fff;
+            line-height: 20px;
+          }
+
+          input{
+            width: 100%;
+            line-height: 24px;
+            margin: 4px 0 16px 0;
+          }
+
+          .submit{
+            text-align: right;
+
+            .btn-submit{
+              width: 70px;
+              line-height: 26px;
+              color: #fff;
+              background: $primary-color;
+              border: none;
+              border-radius: 2px;
+            }      
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 12px 24px 12px;
+
+    .contact-us{
+      li{
+        line-height: 20px;
+        font-size: 14px;
+
+        .pink{
+          color: #e7609f;
+        }
       }
     }
   }

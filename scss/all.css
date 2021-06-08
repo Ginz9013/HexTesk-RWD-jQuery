@@ -151,7 +151,146 @@ table {
 
 .container main .skill-area .card {
   margin: 16px;
-  -webkit-box-shadow: 2px 2px 2px #333;
-          box-shadow: 2px 2px 2px #333;
+  -webkit-box-shadow: 2px 2px 4px #888;
+          box-shadow: 2px 2px 4px #888;
+  width: 33.33%;
+  padding: 4px 16px;
+}
+
+.container main .skill-area .card .img-container {
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main .skill-area .card h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.container main .skill-area .card p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.container main .skill-area .card ul {
+  font-size: 16px;
+  line-height: 24px;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.container main .versus-area {
+  margin-top: 24px;
+}
+
+.container main .versus-area h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.container main .versus-area table {
+  margin: 0 auto;
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.container main .versus-area table tr {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.container main .versus-area table tr th {
+  background: #f7f7f7;
+  padding: 10px 96px 10px 16px;
+}
+
+.container main .versus-area table tr td {
+  padding: 10px 96px 10px 16px;
+}
+
+.container main .info-area {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#02664c), to(#019772));
+  background: linear-gradient(#02664c, #019772);
+  padding: 32px 16px;
+}
+
+.container main .info-area h2 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 1.2px;
+}
+
+.container main .info-area form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.container main .info-area form textarea {
+  width: 60%;
+}
+
+.container main .info-area form .person-info {
+  margin-left: 32px;
+  text-align: left;
+}
+
+.container main .info-area form .person-info label {
+  color: #fff;
+  line-height: 20px;
+}
+
+.container main .info-area form .person-info input {
+  width: 100%;
+  line-height: 24px;
+  margin: 4px 0 16px 0;
+}
+
+.container main .info-area form .person-info .submit {
+  text-align: right;
+}
+
+.container main .info-area form .person-info .submit .btn-submit {
+  width: 70px;
+  line-height: 26px;
+  color: #fff;
+  background: #00cc99;
+  border: none;
+  border-radius: 2px;
+}
+
+.container footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 12px 24px 12px;
+}
+
+.container footer .contact-us li {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.container footer .contact-us li .pink {
+  color: #e7609f;
 }
 /*# sourceMappingURL=all.css.map */
