@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+// Construction
+
 .container{
   max-width: 1000px;
   margin: 0 auto;
@@ -9,21 +11,11 @@
     .sns{
       display: flex;
       justify-content: flex-end;
-      background: #f7f7f7;
       padding: 12px;
 
       li{
-        a{
-          text-decoration: none;
-        }
-
         .fb{
-          color: #3b5998;
           margin-right: 12px;
-        }
-
-        .twitter{
-          color: #00acee;
         }
       }
     }
@@ -36,13 +28,11 @@
       h1{
         a{
           display: block;
-          background: url("../images/logo.png") ;
           text-indent: 101%;
           overflow: hidden;
           white-space: nowrap;
           width: 244px;
           height: 50px;
-
         }
       }
 
@@ -56,7 +46,6 @@
             display: block;
             padding: 16px 24px;
             text-decoration: none;
-            color: $primary-color;
           }
 
           &::before{
@@ -66,16 +55,22 @@
             width: 100%;
             position: absolute;
             bottom: 0;
-            background: $primary-color;
           }
 
           &:hover::before{
             display: block;
           }
 
-          .product-slide{
+          .slide{
             display: none;
+            background: #fff;
+            position: absolute;
+            z-index: 999;
           }
+
+          // &:hover ul{
+          //   display: block;
+          // }
         }
       }
     }
@@ -86,7 +81,6 @@
       display: flex;
       .card{
         margin: 16px;
-        box-shadow: 2px 2px 4px #888;
         width: 33.33%;
         padding:  4px 16px;
 
@@ -98,22 +92,14 @@
         }
 
         h3{
-          font-weight: bold;
-          font-size: 18px;
-          margin-top: 4px;
           text-align: center;
         }
 
         p{
-          font-size: 16px;
-          line-height: 24px;
           margin-top: 12px;
         }
 
         ul{
-          font-size: 16px;
-          line-height: 24px;
-          list-style: disc;
           margin-left: 20px;
         }
       }
@@ -121,25 +107,20 @@
 
     .versus-area{
       margin-top: 24px;
+      margin-bottom: 48px;
       
       h2{
         text-align: center;
-        font-size: 24px;
       }
 
       table{
         margin: 0 auto;
         margin-top: 24px;
-        font-size: 14px;
         text-align: left;
 
         tr{
-          border-top: 1px solid #f0f0f0;
-          border-bottom: 1px solid #f0f0f0;
-          
 
           th{
-            background: #f7f7f7;
             padding: 10px 96px 10px 16px;
           }
 
@@ -152,15 +133,10 @@
 
     .info-area{
       text-align: center;
-      background: linear-gradient( #02664c, #019772);
       padding: 32px 16px;
 
       h2{
-        font-size: 20px;
-        line-height: 24px;
-        color: #fff;
         margin-bottom: 8px;
-        letter-spacing: 1.2px;
       }
 
       form{
@@ -175,14 +151,8 @@
           margin-left: 32px;
           text-align: left;
 
-          label{
-            color: #fff;
-            line-height: 20px;
-          }
-
           input{
             width: 100%;
-            line-height: 24px;
             margin: 4px 0 16px 0;
           }
 
@@ -191,11 +161,6 @@
 
             .btn-submit{
               width: 70px;
-              line-height: 26px;
-              color: #fff;
-              background: $primary-color;
-              border: none;
-              border-radius: 2px;
             }      
           }
         }
@@ -207,16 +172,6 @@
     display: flex;
     justify-content: space-between;
     padding: 16px 12px 24px 12px;
-
-    .contact-us{
-      li{
-        line-height: 20px;
-        font-size: 14px;
-
-        .pink{
-          color: #e7609f;
-        }
-      }
-    }
   }
 }
+

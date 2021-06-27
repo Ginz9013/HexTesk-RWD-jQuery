@@ -1,0 +1,155 @@
+// Style
+
+.container{
+  header{
+    .sns{
+      background: #f7f7f7;
+
+      li{
+        a{
+          text-decoration: none;
+        }
+
+        .fb{
+          color: #3b5998;
+        }
+
+        .twitter{
+          color: #00acee;
+        }
+      }
+    }
+
+    nav{
+
+      h1{
+        a{
+          background: url("../images/logo.png") ;
+        }
+      }
+
+      .menu{
+        display: flex;
+
+        li{
+          position: relative;
+
+          a{
+            color: $primary-color;
+          }
+
+          &::before{
+            
+            background: $primary-color;
+          }
+
+          .product-slide{
+            background: #fff;
+            font-size: 14px;
+
+            li{
+              color: black !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main{
+    .skill-area{
+      .card{
+        box-shadow: 2px 2px 4px #888;
+
+        h3{
+          font-weight: bold;
+          font-size: 18px;
+          margin-top: 4px;
+        }
+
+        p{
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        ul{
+          font-size: 16px;
+          line-height: 24px;
+          list-style: disc;
+        }
+      }
+    }
+
+    .versus-area{
+      
+      h2{
+        font-size: 24px;
+      }
+
+      table{
+        font-size: 14px;
+
+        tr{
+          border-top: 1px solid #f0f0f0;
+          border-bottom: 1px solid #f0f0f0;
+          
+
+          th{
+            background: #f7f7f7;
+          }
+        }
+      }
+    }
+
+    .info-area{
+      background: linear-gradient( #02664c, #019772);
+
+      h2{
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        letter-spacing: 1.2px;
+      }
+
+      form{
+
+        .person-info{
+
+          label{
+            color: #fff;
+            line-height: 20px;
+          }
+
+          input{
+            line-height: 24px;
+          }
+
+          .submit{
+
+            .btn-submit{
+              line-height: 26px;
+              color: #fff;
+              background: $primary-color;
+              border: none;
+              border-radius: 2px;
+            }      
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+
+    .contact-us{
+      li{
+        line-height: 20px;
+        font-size: 14px;
+
+        .pink{
+          color: #e7609f;
+        }
+      }
+    }
+  }
+}

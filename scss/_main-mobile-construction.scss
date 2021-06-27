@@ -1,0 +1,45 @@
+@media(max-width:768px){
+  .container{
+    header{
+      nav{
+        display: block;
+
+        h1{
+          width: 244px;
+          margin: 16px auto;
+        }
+
+        .menu{
+          flex-wrap: wrap;
+
+          li{
+            width: 50%;
+            text-align: center;
+            margin-top: 8px;
+
+            .slide{
+              width: 100%;
+              
+              li{
+                text-align: center;
+                width: 100%;
+
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:768px){
+  .container{
+    main{
+      .skill-area{
+        display: block;
+      }
+    }
+  }
+}

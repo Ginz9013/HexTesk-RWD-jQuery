@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RWD & jQuery task</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <link rel="stylesheet" href="./scss/all.css">
 
 </head>
@@ -32,13 +33,15 @@
         <ul class="menu">
           <li><a href="#">首頁</a></li>
           <li>
-            <a href="#">產品介紹</a>
-            <ul class="product-slide">
+            <a href="#" class="
+            introduction dropdown">課程介紹</a>
+            <ul class="slide dropdown-open">
               <li><a href="#">HTML5</a></li>
               <li><a href="#">響應式網站設計</a></li>
               <li><a href="#">jQuery</a></li>
             </ul>
           </li>
+          <li><a href="#">部落格</a></li>
           <li><a href="#">聯絡我們</a></li>
         </ul>
       </nav>
@@ -179,10 +182,11 @@
   </div>
 
   <script src="./js/jQuery3.6.0-compressed.js"></script>
-
+   
   <!-- Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
+  
   
   <!-- All.js -->
   <script src="./js/all.js"></script>

@@ -1,0 +1,21 @@
+@media(max-width:768px){
+  .container{
+    header{
+      nav{
+        .menu{
+          li{
+            .slide{
+              background: $Primary-Color;
+  
+              li{
+                a{
+                  color: $Secondary-Color;
+                }
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}
